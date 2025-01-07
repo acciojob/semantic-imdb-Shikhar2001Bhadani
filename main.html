@@ -1,41 +1,109 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Semantic IMDb</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic IMDb: The Dark Knight</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        nav {
+            background: #555;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            padding: 0.5rem 0;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 1rem;
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        aside {
+            margin-top: 1rem;
+            padding: 1rem;
+            background: #e9ecef;
+            border-left: 4px solid #333;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #333;
+            color: #fff;
+            margin-top: 1rem;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Interstellar</h1>
+        <h1>The Dark Knight</h1>
     </header>
+
     <nav>
-        <a href="#actor" id="nav-actor">Actors</a>
-        <a href="#quote" id="nav-quote">Quotes</a>
+        <a id="nav-actor" href="#actor">Actors</a>
+        <a id="nav-quote" href="#quote">Quotes</a>
     </nav>
-    <div>
-        <h2>Summary</h2>
-        <p>This is a sci-fi movie that shows time travel in the movie.</p>
-    </div>
-    <section id="actor"> 
-        <h2>Actor</h2>
-        <ul>
-            <li>Matthew McConaughey as Cooper</li>
-            <li>Anne Hathaway as Dr. Amelia Brand</li>
-            <li>Jessica Chastain as Murph</li>
-            <li>Michael Caine as Professor Brand</li>
-        </ul>
-    </section>
-    <section id="quote">
-        <h2>Quote</h2>
-        <blockquote>Live every moment</blockquote>
-    </section>
-    <aside>
-        <h3>Additional Information</h3>
-        <p><strong>IMDb Rating:</strong> 8.6/10</p>
-        <p><strong>Release Date:</strong> November 7, 2014</p>
-    </aside>
+
+    <main>
+        <section id="summary">
+            <h2>Summary</h2>
+            <p>
+                In "The Dark Knight," Batman faces his greatest challenge yet as he battles the Joker, 
+                a criminal mastermind who wreaks havoc on Gotham City. The film explores themes of chaos, 
+                morality, and heroism as Batman, Commissioner Gordon, and Harvey Dent form an uneasy alliance 
+                to combat the Joker's reign of terror.
+            </p>
+        </section>
+
+        <section id="actor">
+            <h2>Actors</h2>
+            <ul>
+                <li>Christian Bale as Bruce Wayne / Batman</li>
+                <li>Heath Ledger as The Joker</li>
+                <li>Aaron Eckhart as Harvey Dent</li>
+                <li>Michael Caine as Alfred Pennyworth</li>
+                <li>Maggie Gyllenhaal as Rachel Dawes</li>
+            </ul>
+        </section>
+
+        <section id="quote">
+            <h2>Quotes</h2>
+            <blockquote>
+                "Why so serious?" - The Joker
+            </blockquote>
+        </section>
+
+        <aside>
+            <h2>Movie Details</h2>
+            <p><strong>IMDb Rating:</strong> 9.0/10</p>
+            <p><strong>Release Date:</strong> July 18, 2008</p>
+        </aside>
+    </main>
+
     <footer>
-        <p><strong>Produced by:</strong> Christopher Nolan</p>
+        <p>Produced by: Christopher Nolan</p>
     </footer>
 </body>
 </html>
